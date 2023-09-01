@@ -21,7 +21,7 @@
                     <img class="chip-image" src="images/chip-image.png" alt="" />
                     <img class="visa-logo" src="images/visa-logo.png" alt="" />
                 </div>
-                <div class="card-number-box">################</div>
+                <div class="card-number-box">XXXX XXXX XXXX XXXX</div>
                 <div class="card-holder-name-box">
                     <div class="box">
                         <span>card holder</span>
@@ -45,21 +45,26 @@
                 </div>
             </div>
         </div>
+        <div class="success-message" id="success-message">
+            Form submitted successfully!
+        </div>
 
-        <form action="">
+        <form action="" id="payment-form">
             <div class="input-box">
+                <div class="card-logo" id="card-logo"></div>
                 <span>Card number</span>
-                <input type="text" maxlength="16" class="card-number-input" />
+                <input type="text" id="card-number" maxlength="19" class="card-number-input" name="card-number" required />
             </div>
+            <div class="card-logo" id="card-logo"></div>
             <div class="input-box">
                 <span>Card holder name</span>
-                <input type="text" class="card-holder-input" />
+                <input type="text" id="card-holder-input" class="card-holder-input" name="card-holder-input" required />
             </div>
             <div class="flexbox">
                 <div class="input-box">
                     <span>Expiration month</span>
-                    <select name="" id="" class="month-input">
-              <option value="month" selected disabled>Month</option>
+                    <select name="year-input" id="month-input" class="month-input" required>
+              <option value="" selected disabled>Month</option>
               <option value="01">01</option>
               <option value="02">02</option>
               <option value="03">03</option>
@@ -76,8 +81,8 @@
                 </div>
                 <div class="input-box">
                     <span>Expiration year</span>
-                    <select name="" id="" class="year-input">
-              <option value="year" selected disabled>Year</option>
+                    <select name="year-input" id="year-input" class="year-input" required>
+              <option value="" selected disabled>Year</option>
               <option value="2023">2023</option>
               <option value="2024">2024</option>
               <option value="2025">2025</option>
@@ -91,11 +96,11 @@
                 </div>
                 <div class="input-box">
                     <span>Cvv</span>
-                    <input type="text" maxlength="4" class="cvv-input" />
+                    <input type="text" pattern="\d{3,4}" maxlength="4" id="cvv-input" class="cvv-input" required />
                 </div>
             </div>
 
-            <input type="submit" value="submit" class="submit-btn" />
+            <input type="submit" value="Submit" class="submit-btn" />
         </form>
     </main>
 
