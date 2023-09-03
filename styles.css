@@ -19,13 +19,13 @@
     font-size: 11px;
   }
   .container form {
-    height: 80%;
+    height: 100%;
     width: 95%;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 10px 15px rgb(0, 0, 0, 0.1);
     padding: 10px;
-    padding-top: 60px;
+    padding-top: 160px;
   }
   .container form .input-box {
     margin-top: 20px;
